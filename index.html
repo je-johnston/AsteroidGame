@@ -1,0 +1,97 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>James Johnston TCSS 491 Assignment 2/3</title>
+
+   
+
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./gamemanager.js"></script>
+    <script type="text/javascript" src="./background.js"></script>
+    <script type="text/javascript" src="./Collider.js"></script>
+    <script type="text/javascript" src="./Asteroid.js"></script>
+    <script type="text/javascript" src="./SpaceShip.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+
+
+<style>
+    body{background-color: black;}   
+
+    #timer{
+        position: absolute;
+        color: white;
+        top: 200px;
+        left: 830px;
+    }
+
+    #debug {
+        position: absolute;
+        color: white;
+        top: 300px;
+        left: 830px;
+    }
+
+    #pauseButton {
+        position: absolute;
+        top: 500px;
+        left: 830px;
+    }
+
+    #showCols {
+        position: absolute;
+        top: 600px;
+        left: 830px;
+    }
+
+    #title {
+        position: absolute;
+        top: 50px;
+        left: 830px;
+        color: white;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <canvas id="gameWorld" tabindex="1" width="800" height="800" style="border: 1px solid brown; background: black"></canvas>
+
+    <p id="timer">Elapsed Time: <span id="tm"></span></p>
+
+    <p id="title">TCSS 491 <br />Assignment 2/3 <br />James Johnston</p>
+
+    <p id="debug">SensorX = <span id="sensX"></span>
+    <br />SensorY = <span id="sensY"></span>
+    <br />SensorHeight = <span id="sensHeight"></span>
+    <br />SensorWidth = <span id="sensWidth"></span>
+    <!--<br />
+    <br />Asteroid X's = <span id="astX"></span>
+    <br />Asteroid Y's = <span id="astY"></span>
+    <br />Asteroid Widths = <span id="astWidth"></span>
+    <br />Asteroid Height = <span id="astHeight"></span>-->
+    
+    </p>
+    
+    <button type="button" id="pauseButton">Pause</button>
+    <button type="button" id="showCols">Toggle Visual Colliders</button>
+
+
+    <!--<input type="range" id="scanSlider" list="tickmarks" min="100" step="100" max="700" value="400"/>
+
+    <datalist id="tickmarks">
+        <option value="100">
+        <option value="200">
+        <option value="300">
+        <option value="400">
+        <option value="500">
+        <option value="600">
+        <option value="700">
+    </datalist>-->
+
+
+</body>
+</html>
