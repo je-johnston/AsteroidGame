@@ -10,31 +10,28 @@ class gamemanager extends Entity {
 
 
 
-        this.socket = io.connect("http://24.16.255.56:8888");
-        this.socket.on("connect", function () {
-            console.log("Socket connected.")
-        });
-        this.socket.on("disconnect", function () {
-            console.log("Socket disconnected.")
-        });
-        this.socket.on("reconnect", function () {
-            console.log("Socket reconnected.")
-        });
+        //this.socket = io.connect("http://24.16.255.56:8888");
+        //this.socket.on("connect", function () {
+        //    console.log("Socket connected.")
+        //});
+        //this.socket.on("disconnect", function () {
+        //    console.log("Socket disconnected.")
+        //});
+        //this.socket.on("reconnect", function () {
+        //    console.log("Socket reconnected.")
+        //});
 
-        var that = this;
-        this.socket.on("load", function (data) {
-            that.loadState(data);
-            //console.log(data.data.playerX);
-        });
+        //var that = this;
+        //this.socket.on("load", function (data) {
+        //    that.loadState(data);
+        //    //console.log(data.data.playerX);
+        //});
 
-        //socket.emit("save", { studentname: "James Johnston", statename: "gameStart", data: "Goodbye World" });
-        //socket.emit("load", { studentname: "Chris Marriott", statename: "aState" });
-        //socket.emit("load", { studentname: "Chris Marriott", statename: "theState" });
 
-        this.socket.on("ping", function (ping) {
-            console.log(ping);
-            socket.emit("pong");
-        });
+        //this.socket.on("ping", function (ping) {
+        //    console.log(ping);
+        //    socket.emit("pong");
+        //});
 
 
 
@@ -75,15 +72,15 @@ class gamemanager extends Entity {
         document.getElementById("showCols").onclick = function (event) {
             that.toggleCols();
         };
-        var that = this;
-        document.getElementById("saveState").onclick = function (event) {
-            that.saveState();
-        };
+        //var that = this;
+        //document.getElementById("saveState").onclick = function (event) {
+        //    that.saveState();
+        //};
 
-        var that = this;
-        document.getElementById("loadState").onclick = function (event) {
-            that.sendLoadSignal();
-        };
+        //var that = this;
+        //document.getElementById("loadState").onclick = function (event) {
+        //    that.sendLoadSignal();
+        //};
 
 
 
