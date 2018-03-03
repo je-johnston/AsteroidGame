@@ -50,6 +50,10 @@ class SpaceShip extends Entity {
         this.x = newX;
     } 
 
+    setY(newY) {
+        this.y = newY;
+    }
+
     getColliders() {
         return this.colliders;
     }
